@@ -1,0 +1,89 @@
+#contenedorPrincipal{
+    position: absolute;
+    border-style: dashed;
+    border-color: black;
+    height: auto;
+    width: 90%;
+    left: 5%;
+}
+
+#divSubIzquierda{
+    position: relative;
+    border-style: dashed;
+    border-color: green;       
+}
+
+#divSubDerecha{
+    position: absolute;
+    top : 0px;
+    right : 10%;
+    border-style: dashed;
+    border-color: red;    
+}
+
+#divTablaMarcos{
+    position: relative;
+    right: 0%;
+}
+
+#divTablaConversiones{
+    position: relative;
+}
+
+#divConversionesBinarias{
+    position: absolute;
+    border-style: dashed;
+    border-color : orange;
+}
+
+#divConversionesHexadecimales{
+    position: absolute;
+    border-style: dashed;
+    border-color : pink;
+    top : 0%;
+    right : 40%;
+}
+
+#divConversionesDecimales{
+    position: absolute;
+    border-style: dashed;
+    border-color : teal;
+    top : 0%;
+    right : 0%;
+}
+
+.tablaConversionesAux tbody tr:nth-child(odd) {
+    background-color: #b1afaf;
+}
+  
+.tablaConversionesAux tbody tr:nth-child(even) {
+background-color: #ffffff;
+}
+
+.primerDireccion{
+    border : solid 1px;
+}
+
+.bitConversion{
+    color : blue;
+}
+
+.noRAM{
+    background-color: #ffffff;
+}
+
+.clase0RM{
+    background-color: #264b96;
+}
+
+.clase1RM{
+    background-color: #006f3c;
+}
+
+.clase2RM{
+    background-color: #f9a73e;
+}
+
+.clase3RM{
+    background-color: #bf212f
+}
