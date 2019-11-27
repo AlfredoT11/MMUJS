@@ -146,8 +146,8 @@ function imprimirTabla(idTabla, idDiv, pagina, marcoPagina, modo){
 
     //alert("Pagina: "+pagina+" Marco: "+marcoPagina);
 
-    var codigoTabla = "<table id='"+idTabla+"' class='tablaConversionesAux'><tr><td>Dirección Virtual</td><td>Dirección Física</td></tr></table>";    
-    document.getElementById(idDiv).innerHTML = codigoTabla;
+    //var codigoTabla = "<table id='"+idTabla+"' class='tablaConversionesAux'><tr><td>Dirección Virtual</td><td>Dirección Física</td></tr></table>";
+    //document.getElementById(idDiv).innerHTML = codigoTabla;
     var referenciaTabla = document.getElementById(idTabla);
     var nuevaFila, celda0, celda1, direccionBinaria;
 
@@ -285,7 +285,7 @@ function transformarDireccion(elemento) {
             }
         }
 
-        var auxInfo = "Clase 0: ";
+        /*var auxInfo = "Clase 0: ";
 
         for(let elem of clase0){
             auxInfo+=" "+elem;
@@ -306,7 +306,7 @@ function transformarDireccion(elemento) {
             auxInfo+=" "+elem;
         }
 
-        document.getElementById("divImpresionesPrueba").innerHTML = auxInfo;
+        document.getElementById("divImpresionesPrueba").innerHTML = auxInfo; */
 
         if(clase0.length != 0){
             paginaADesalojar = clase0[0];

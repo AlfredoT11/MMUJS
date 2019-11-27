@@ -7,6 +7,20 @@ body{
     font-family:regularBond;
 }
 
+.footHead{
+    position: absolute;
+    overflow: hidden;
+    width:99%;
+    height:8%;
+    background-color:#6c1641;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    z-index:1;
+}
+
+#navSuperior{
+    top:0;
+}
+
 #contenedorPrincipal{
     position: absolute;
     /*border-style: dashed; */
@@ -41,13 +55,13 @@ body{
 
 #divConversionesBinarias{
     position: absolute;
-    border-style: dashed;
+    /*border-style: dashed;*/
     /*border-color : orange;*/
 }
 
 #divConversionesHexadecimales{
     position: absolute;
-    border-style: dashed;
+    /*border-style: dashed;*/
     /*border-color : pink;*/
     top : 0%;
     right : 40%;
@@ -55,10 +69,30 @@ body{
 
 #divConversionesDecimales{
     position: absolute;
-    border-style: dashed;
+    /*border-style: dashed;*/
     /*border-color : teal;*/
     top : 0%;
     right : 0%;
+}
+
+#divPrimerDireccion, #direccionFisica{
+    position: absolute;
+    /*border-style : dashed;*/
+    right : 0%;
+}
+
+.divLeyendaColores{
+    position : absolute;
+    top : 160%;
+    /*border-style : dashed;*/
+}
+
+#divLeyendaColoresIzq{
+    left : 30%;
+}
+
+#divLeyendaColoresDer{
+    left : 60%;
 }
 
 table{
@@ -70,7 +104,7 @@ td, th {
     padding: 8px;
   }
 
-#tablaPaginas thead{
+thead, .headConversion{
     background-color: #5c5c5c;
     color: #FFFFFF;
 }
@@ -136,3 +170,7 @@ td, th {
 .clase3RM .botonPagina{
     background-color: #bf212f;
 }
+
+.tablaConversionesAux tr:nth-child(even){background-color: #f2f2f2;}
+
+.tablaConversionesAux tr:hover {background-color: #ddd;}

@@ -15,6 +15,13 @@
 
 <body onload="incializar()">
 
+<div id="navSuperior" class="footHead">
+
+
+</div>
+<br><br>
+<center><h1>MMU</h1></center>
+
 <div id="contenedorPrincipal">
 
     <div id="divSubIzquierda">
@@ -150,52 +157,66 @@
 
         <div id="divTablaMarcos">
             <table id="tablaMarcos">
-                <tr>
+                <thead>
                     <td>Número de marco</td>
                     <td>Ocupado</td>
-                </tr>
-                <tr>
-                    <td id="numMarco0"></td>
-                    <td id="bitMarco0"></td>
-                </tr>
-                <tr>
-                    <td id="numMarco1"></td>
-                    <td id="bitMarco1"></td>
-                </tr>
-                <tr>
-                    <td id="numMarco2"></td>
-                    <td id="bitMarco2"></td>
-                </tr>
-                <tr>
-                    <td id="numMarco3"></td>
-                    <td id="bitMarco3"></td>
-                </tr>
-                <tr>
-                    <td id="numMarco4"></td>
-                    <td id="bitMarco4"></td>
-                </tr>
-                <tr>
-                    <td id="numMarco5"></td>
-                    <td id="bitMarco5"></td>
-                </tr>
-                <tr>
-                    <td id="numMarco6"></td>
-                    <td id="bitMarco6"></td>
-                </tr>
+                </thead>
+
                 <tr>
                     <td id="numMarco7"></td>
                     <td id="bitMarco7"></td>
                 </tr>
 
+                <tr>
+                    <td id="numMarco6"></td>
+                    <td id="bitMarco6"></td>
+                </tr>                
+
+                <tr>
+                    <td id="numMarco5"></td>
+                    <td id="bitMarco5"></td>
+                </tr>
+
+                <tr>
+                    <td id="numMarco4"></td>
+                    <td id="bitMarco4"></td>
+                </tr>
+
+                <tr>
+                    <td id="numMarco3"></td>
+                    <td id="bitMarco3"></td>
+                </tr>                
+
+                <tr>
+                    <td id="numMarco2"></td>
+                    <td id="bitMarco2"></td>
+                </tr>                
+
+                <tr>
+                    <td id="numMarco1"></td>
+                    <td id="bitMarco1"></td>
+                </tr>
+
+                <tr>
+                    <td id="numMarco0"></td>
+                    <td id="bitMarco0"></td>
+                </tr>    
             </table>
         </div>
 
         <div id="divImpresionesPrueba">
 
         </div>      
+
+        <br>
         
         <div id="divPrimerDireccion">
             <table id="direccionVirtual" class="primerDireccion">
+                
+                <thead>
+                    <td colspan="16">Primera dirección virtual</td>
+                </thead>
+                
                 <tr>
                     <td id="bit15V" class="bitConversion">0</td>
                     <td id="bit14V" class="bitConversion">0</td>
@@ -216,7 +237,12 @@
                 </tr>
             </table>
 
+            <br>
+
             <table id="direccionFisica" class="primerDireccion">
+                <thead>
+                    <td colspan="15">Primera dirección física</td>
+                </thead> 
                 <tr>
                     <td id="bit14F" class="bitConversion">0</td>
                     <td id="bit13F" class="bitConversion">0</td>
@@ -234,25 +260,61 @@
                     <td id="bit1F">0</td>
                     <td id="bit0F">0</td>
                 </tr>
-            </table>            
+            </table>  
+           
+            <hr>
+
+            <div id="divLeyendaColoresIzq" class="divLeyendaColores">
+                <div class = "clase0RM"><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clase 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></div>
+                <div class = "clase2RM"><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clase 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></div>
+            </div>
+
+            <div id="divLeyendaColoresDer" class="divLeyendaColores">
+                    <div class = "clase1RM"><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clase 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></div>
+                    <div class = "clase3RM"><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clase 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></div>
+                </div>            
+            
         </div>
+
+        
 
     </div>
 
-    <div id="divTablaConversiones">
-        <div id="divConversionesBinarias">
+    <center><h3>Conversión de direcciones</h3></center>
 
+    <div id="divTablaConversiones">
+
+
+        <div id="divConversionesBinarias">
+            <table id="tablaConversionesBinaria" class='tablaConversionesAux'>
+                <tr class="headConversion">
+                    <td>Dirección Virtual</td>
+                    <td>Dirección Física</td>
+                </tr>
+            </table>
         </div>
 
         <div id="divConversionesHexadecimales">
-
+            <table id="tablaConversionesHexa" class='tablaConversionesAux'>
+                <tr class="headConversion">
+                    <td>Dirección Virtual</td>
+                    <td>Dirección Física</td>
+                </tr>
+            </table>
         </div>
 
         <div id="divConversionesDecimales">
-
+            <table id="tablaConversionesDeci" class='tablaConversionesAux'>
+                <tr class="headConversion">
+                    <td>Dirección Virtual</td>
+                    <td>Dirección Física</td>
+                </tr>
+            </table>
         </div>        
 
     </div>    
+
+    <br><br><br>
 
 </div>
 
