@@ -63,14 +63,16 @@ function inicializarTabla() {
 
 function inicializarTablaRAM() {
     var i = 0;
-    var marcoAux, bitAux;
+    var marcoAux, bitAux, numPagina;
     //alert("Hola"+i);
     for (i = 0; i < 8; i++) {
         marcoAux = "numMarco" + i;
         bitAux = "bitMarco" + i;
+        numPagina = "numPagina" + i
         //alert("marco: "+marcoAux);
         document.getElementById(marcoAux).innerHTML = i;
         document.getElementById(bitAux).innerHTML = "0";
+        document.getElementById(numPagina).innerHTML = "0";
     }
 }
 
@@ -146,8 +148,8 @@ function imprimirTabla(idTabla, idDiv, pagina, marcoPagina, modo){
 
     //alert("Pagina: "+pagina+" Marco: "+marcoPagina);
 
-    //var codigoTabla = "<table id='"+idTabla+"' class='tablaConversionesAux'><tr><td>Dirección Virtual</td><td>Dirección Física</td></tr></table>";
-    //document.getElementById(idDiv).innerHTML = codigoTabla;
+    var codigoTabla = "<table id='"+idTabla+"' class='tablaConversionesAux'><tr><td>Dirección Virtual</td><td>Dirección Física</td></tr></table>";
+    document.getElementById(idDiv).innerHTML = codigoTabla;
     var referenciaTabla = document.getElementById(idTabla);
     var nuevaFila, celda0, celda1, direccionBinaria;
 
@@ -259,6 +261,8 @@ function transformarDireccion(elemento) {
         //marcoAux = "marcoDir"+elemento.value;
         document.getElementById("marcoDir"+elemento.value).innerHTML = tablaPaginas[paginaSelec].marcoPagina;
 
+        document.getElementById("numPagina"+espacio).innerHTML = paginaSelec;
+
     }else{
 
         var clase0=[], clase1=[], clase2=[], clase3=[];
@@ -329,6 +333,9 @@ function transformarDireccion(elemento) {
         document.getElementById("marcoDir"+elemento.value).innerHTML = tablaPaginas[paginaSelec].marcoPagina;
 
         marcoPagina = tablaPaginas[paginaSelec].marcoPagina;
+
+        //alert("Marco: "+parseInt(marcoPagina,2));
+        document.getElementById("numPagina"+parseInt(marcoPagina,2)).innerHTML = paginaSelec;
 
     }
 
